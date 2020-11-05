@@ -1,0 +1,40 @@
+git clone ${1}
+val=${1##*/}
+val=${val%%*.}
+cd ${val}
+
+printf "test norminette\n"
+
+norminette get*
+
+
+
+printf "test gnlkiller"
+git clone https://github.com/DontBreakAlex/gnlkiller.git
+cp get* gnlkiller/
+cd gnlkiller
+bash run.sh
+cd ..
+rm -rf gnlkiller
+printf "\n\n\n"
+
+printf "test gnl lover"
+
+git clone https://github.com/charMstr/GNL_lover.git
+cp get* GNL_lover/copy_in_here_GNL_files
+cd GNL_lover
+make
+bash GNL_lover.sh<test_files_GNL/shaky_cat
+rm copy_in_here_GNL_files/get*
+cd ..
+rm -rf GNL_lover
+
+printf "\n\n\n"
+
+git clone https://github.com/Alexandre94H/gnl-war-machine-v2019.git
+cd gnl-war-machine-v2019
+vi my_config.sh
+bash grademe.sh
+cd ..
+rm -rf gnl-war-machine-v2019
+
