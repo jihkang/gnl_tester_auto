@@ -1,25 +1,16 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    run.sh                                             :+:      :+:    :+:    #
+#    README.md                                          :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: jihkang </var/mail/jihkang>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2020/11/05 23:41:17 by jihkang           #+#    #+#              #
-#    Updated: 2020/11/05 23:41:19 by jihkang          ###   ########.fr        #
+#    Created: 2020/11/05 23:40:37 by jihkang           #+#    #+#              #
+#    Updated: 2020/11/05 23:41:01 by jihkang          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
-if [ $# -lt 1 ];
-then
-	echo “$0 <Account>…”
-	exit 0
-fi
-git clone $1 gnl_eval
+bash run.sh intrareop
 
-mv program gnl_eval
-cd gnl_eval
-bash program
-cd ..
-rm -rf gnl_eval
+
