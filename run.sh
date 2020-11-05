@@ -6,14 +6,14 @@
 #    By: jihkang </var/mail/jihkang>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/05 23:41:17 by jihkang           #+#    #+#              #
-#    Updated: 2020/11/05 23:41:19 by jihkang          ###   ########.fr        #
+#    Updated: 2020/11/05 23:44:37 by jihkang          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 if [ $# -lt 1 ];
 then
-	echo “$0 <Account>…”
+	echo “$0 <Insert intra repo>…”
 	exit 0
 fi
 git clone $1 gnl_eval
